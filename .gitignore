@@ -50,4 +50,6 @@ junit.xml
 .jsii
 tsconfig.json
 !/API.md
+/assets/
+!/src/funcs/send-slack-message-function.ts
 !/.projenrc.ts

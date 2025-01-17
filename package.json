@@ -7,6 +7,9 @@
   "scripts": {
     "build": "npx projen build",
     "bump": "npx projen bump",
+    "bundle": "npx projen bundle",
+    "bundle:funcs/send-slack-message.lambda": "npx projen bundle:funcs/send-slack-message.lambda",
+    "bundle:funcs/send-slack-message.lambda:watch": "npx projen bundle:funcs/send-slack-message.lambda:watch",
     "clobber": "npx projen clobber",
     "compat": "npx projen compat",
     "compile": "npx projen compile",
@@ -49,6 +52,7 @@
     "axios": "^1.6.7",
     "commit-and-tag-version": "^12",
     "constructs": "10.0.5",
+    "esbuild": "^0.24.2",
     "eslint": "^9",
     "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-import": "^2.31.0",
