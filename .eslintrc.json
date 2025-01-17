@@ -149,6 +149,7 @@
         "devDependencies": [
           "**/test/**",
           "**/build-tools/**",
+          "src/funcs/send-slack-message.lambda.ts",
           ".projenrc.ts",
           "projenrc/**/*.ts"
         ],
