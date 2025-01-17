@@ -25,7 +25,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   peerDeps: [
     '@gammarers/aws-resource-naming@^0.8.0',
   ],
-  releaseToNpm: false, // todo: temp
+  releaseToNpm: true,
   npmAccess: javascript.NpmAccess.PUBLIC,
   jestOptions: {
     jestConfig: {
