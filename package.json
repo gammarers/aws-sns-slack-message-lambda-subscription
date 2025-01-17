@@ -34,12 +34,19 @@
     "organization": true
   },
   "devDependencies": {
+    "@gammarers/aws-resource-naming": "0.8.0",
+    "@gammarers/jest-aws-cdk-asset-filename-renamer": "^0.5.21",
+    "@slack/webhook": "^7.0.3",
     "@stylistic/eslint-plugin": "^2",
+    "@types/aws-lambda": "^8.10.145",
     "@types/jest": "^29.5.14",
     "@types/node": "^18",
     "@typescript-eslint/eslint-plugin": "^8",
     "@typescript-eslint/parser": "^8",
     "aws-cdk-lib": "2.120.0",
+    "aws-sdk-client-mock": "^4.1.0",
+    "aws-sdk-client-mock-jest": "^4.1.0",
+    "axios": "^1.6.7",
     "commit-and-tag-version": "^12",
     "constructs": "10.0.5",
     "eslint": "^9",
@@ -58,8 +65,12 @@
     "typescript": "5.5.x"
   },
   "peerDependencies": {
+    "@gammarers/aws-resource-naming": "^0.8.0",
     "aws-cdk-lib": "^2.120.0",
     "constructs": "^10.0.5"
+  },
+  "dependencies": {
+    "@gammarers/aws-resource-naming": "0.8.0"
   },
   "keywords": [
     "cdk"
@@ -75,6 +86,9 @@
   "version": "0.0.0",
   "jest": {
     "coverageProvider": "v8",
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/@gammarers/jest-aws-cdk-asset-filename-renamer"
+    ],
     "testMatch": [
       "<rootDir>/@(src|test)/**/*(*.)@(spec|test).ts?(x)",
       "<rootDir>/@(src|test)/**/__tests__/**/*.ts?(x)",
