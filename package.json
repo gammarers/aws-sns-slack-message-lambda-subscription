@@ -37,7 +37,6 @@
     "organization": true
   },
   "devDependencies": {
-    "@gammarers/aws-resource-naming": "0.8.0",
     "@gammarers/jest-aws-cdk-asset-filename-renamer": "^0.5.21",
     "@slack/webhook": "^7.0.3",
     "@stylistic/eslint-plugin": "^2",
@@ -69,12 +68,12 @@
     "typescript": "5.7.x"
   },
   "peerDependencies": {
-    "@gammarers/aws-resource-naming": "^0.8.0",
+    "@gammarers/aws-resource-naming": "^0.10.1",
     "aws-cdk-lib": "^2.120.0",
     "constructs": "^10.0.5"
   },
   "dependencies": {
-    "@gammarers/aws-resource-naming": "0.8.0"
+    "@gammarers/aws-resource-naming": "0.10.1"
   },
   "keywords": [
     "cdk"

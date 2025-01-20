@@ -1,11 +1,6 @@
 {
   "dependencies": [
     {
-      "name": "@gammarers/aws-resource-naming",
-      "version": "0.8.0",
-      "type": "build"
-    },
-    {
       "name": "@gammarers/jest-aws-cdk-asset-filename-renamer",
       "version": "^0.5.21",
       "type": "build"
@@ -132,7 +127,7 @@
     },
     {
       "name": "@gammarers/aws-resource-naming",
-      "version": "^0.8.0",
+      "version": "^0.10.1",
       "type": "peer"
     },
     {
@@ -147,7 +142,7 @@
     },
     {
       "name": "@gammarers/aws-resource-naming",
-      "version": "0.8.0",
+      "version": "0.10.1",
       "type": "runtime"
     }
   ],

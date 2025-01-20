@@ -525,10 +525,10 @@
     "@eslint/core" "^0.10.0"
     levn "^0.4.1"
 
-"@gammarers/aws-resource-naming@0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@gammarers/aws-resource-naming/-/aws-resource-naming-0.8.0.tgz#8a9be5ac99d14dacc9655f4fb5e54f332189655e"
-  integrity sha512-tEoHISz2N/O0CTMEWt++sGTUoBlnUfhKa1sCcTiWfawZ2lN5+3K0Jr2PsaQzJ6BOhHWqXi/CMRas6x3UN7oNUQ==
+"@gammarers/aws-resource-naming@0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@gammarers/aws-resource-naming/-/aws-resource-naming-0.10.1.tgz#210fd589c10a86102d589bf0e6ceed236c180f1e"
+  integrity sha512-f7EMSndD3RzbfMmhRWYdPulM127RPSZF2QDa5QM6z8rvzoLX+X3ldyDZ0QmOPlmEjkxRN2UXWzeFnDj/onkdpg==
 
 "@gammarers/jest-aws-cdk-asset-filename-renamer@^0.5.21":
   version "0.5.31"

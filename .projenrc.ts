@@ -11,11 +11,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   projenrcTs: true,
   repositoryUrl: 'https://github.com/gammarers/aws-sns-slack-message-lambda-subscription.git',
   deps: [
-    '@gammarers/aws-resource-naming@0.8.0',
+    '@gammarers/aws-resource-naming@0.10.1',
   ],
   devDeps: [
     '@gammarers/jest-aws-cdk-asset-filename-renamer@^0.5.21',
-    '@gammarers/aws-resource-naming@0.8.0',
     '@slack/webhook@^7.0.3',
     '@types/aws-lambda@^8.10.145',
     'axios@^1.6.7',
@@ -23,7 +22,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'aws-sdk-client-mock-jest@^4.1.0',
   ],
   peerDeps: [
-    '@gammarers/aws-resource-naming@^0.8.0',
+    '@gammarers/aws-resource-naming@^0.10.1',
   ],
   releaseToNpm: true,
   npmAccess: javascript.NpmAccess.PUBLIC,
