@@ -1,4 +1,4 @@
-import { ResourceDefaultNaming, ResourceNaming, ResourceNamingOptions, ResourceNamingType } from '@gammarers/aws-resource-naming';
+import { ResourceDefaultNaming, ResourceNaming, ResourceNamingType } from '@gammarers/aws-resource-naming';
 import { Duration, Names, RemovalPolicy, Stack } from 'aws-cdk-lib';
 import * as iam from 'aws-cdk-lib/aws-iam';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
@@ -35,7 +35,7 @@ export class SNSSlackMessageLambdaSubscription extends Construct {
       functionName: `send-slack-message-${random}-func`,
       functionRoleName: `send-slack-message-lambda-func-exec-${random}-role`,
     };
-    const names = ResourceNaming.naming(autoNaming, props.resourceNamingOption as ResourceNamingOptions);
+    const names = ResourceNaming.naming(autoNaming, props.resourceNamingOption as ResourceNaming.ResourceNamingOption);
 
     // Lambda function
     const sendMessageFunction = new SendSlackMessageFunction(this, 'SendSlackMessageFunction', {
