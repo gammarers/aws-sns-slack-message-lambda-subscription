@@ -1,6 +1,8 @@
 # AWS SNS Slack Message Lambda Subscription
 
-````json
+This AWS CDK Construct is designed to post messages sent from an SNS topic to a Slack Webhook via a Lambda function. The Lambda function accepts JSON text as a message, formats it for Slack, and sends it to the Slack Webhook API.
+
+```json
 {
     "text": ":mega: *TEST*",
     "attachments": [{

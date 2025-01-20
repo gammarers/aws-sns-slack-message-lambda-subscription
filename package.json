@@ -1,5 +1,6 @@
 {
   "name": "@gammarers/aws-sns-slack-message-lambda-subscription",
+  "description": "This AWS CDK Construct is designed to post messages sent from an SNS topic to a Slack Webhook via a Lambda function.",
   "repository": {
     "type": "git",
     "url": "https://github.com/gammarers/aws-sns-slack-message-lambda-subscription.git"
@@ -78,7 +79,13 @@
     "@gammarers/aws-resource-naming": "0.10.1"
   },
   "keywords": [
-    "cdk"
+    "aws",
+    "aws-cdk",
+    "cdk",
+    "lambda",
+    "slack",
+    "sns",
+    "webhook"
   ],
   "engines": {
     "node": ">= 18.0.0"

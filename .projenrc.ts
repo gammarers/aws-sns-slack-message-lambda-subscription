@@ -8,6 +8,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   typescriptVersion: '5.7.x',
   jsiiVersion: '5.7.x',
   name: '@gammarers/aws-sns-slack-message-lambda-subscription',
+  description: 'This AWS CDK Construct is designed to post messages sent from an SNS topic to a Slack Webhook via a Lambda function.',
+  keywords: ['aws', 'cdk', 'aws-cdk', 'sns', 'lambda', 'slack', 'webhook'],
   projenrcTs: true,
   repositoryUrl: 'https://github.com/gammarers/aws-sns-slack-message-lambda-subscription.git',
   deps: [
