@@ -51,5 +51,13 @@ const project = new awscdk.AwsCdkConstructLibrary({
     secret: 'GITHUB_TOKEN',
     allowedUsernames: ['yicr'],
   },
+  publishToPypi: {
+    distName: 'gammarers.aws-resource-naming',
+    module: 'gammarers.aws_resource_naming',
+  },
+  publishToNuget: {
+    dotNetNamespace: 'Gammarers.CDK.AWS',
+    packageId: 'Gammarers.CDK.AWS.ResourceNaming',
+  },
 });
 project.synth();
