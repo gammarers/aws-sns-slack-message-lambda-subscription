@@ -54,12 +54,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
     allowedUsernames: ['yicr'],
   },
   publishToPypi: {
-    distName: 'gammarers.aws-resource-naming',
-    module: 'gammarers.aws_resource_naming',
+    distName: 'gammarers.aws-sns-slack-message-lambda-subscription',
+    module: 'gammarers.aws_sns_slack_message_lambda_subscription',
   },
   publishToNuget: {
     dotNetNamespace: 'Gammarers.CDK.AWS',
-    packageId: 'Gammarers.CDK.AWS.ResourceNaming',
+    packageId: 'Gammarers.CDK.AWS.SNSSlackMessageLambdaSubscription',
   },
 });
 project.synth();
