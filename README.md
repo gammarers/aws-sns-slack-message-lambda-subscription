@@ -9,11 +9,66 @@
 
 This AWS CDK Construct is designed to post messages sent from an SNS topic to a Slack Webhook via a Lambda function. The Lambda function accepts JSON text as a message, formats it for Slack, and sends it to the Slack Webhook API.
 
-## Sample Message
-
+## Incoming Sample Message
 
 ![](./images/example.png)
 
+
+## Installation
+
+### TypeScript
+
+#### install by npm
+
+```shell
+npm install @gammarers/aws-sns-slack-message-lambda-subscription
+```
+
+#### install by yarn
+
+```shell
+yarn add @gammarers/aws-sns-slack-message-lambda-subscription
+```
+
+### Python
+
+```shell
+pip install gammarers.aws-sns-slack-message-lambda-subscription
+```
+
+### C# / .NET
+
+```shell
+dotnet add package Gammarers.CDK.AWS.SNSSlackMessageLambdaSubscription
+```
+## Example
+
+### Please save it in AWS Secrets Manager in the following format.
+
+get your slack webhook url parts
+
+```text
+https://hooks.slack.com/services/<workspace>/<channel>/<whebook>
+```
+
+| SecretKey 	 | SecretValue 	   |
+|-------------|-----------------|
+| Workspace 	 | \<workspace\> 	 |
+| Channel   	 | \<channel\>   	 |
+| Webhook   	 | \<whebook\>   	 |
+
+### Code
+
+```typescript
+import { SNSSlackMessageLambdaSubscription } from '@gammarer/aws-sns-slack-message-lambda-subscription';
+
+declare const topic: sns.Topic;
+
+new SNSSlackMessageLambdaSubscription(stack, 'SNSSlackMessageLambdaSubscription', {
+  topic,
+  slackWebhookSecretName: 'slak-webhook', // alredy saved slack webhook info.
+});
+```
 
 ```json
 {
@@ -21,7 +76,7 @@ This AWS CDK Construct is designed to post messages sent from an SNS topic to a 
     "attachments": [{
         "color": "#2eb886",
         "title": "CodePipeline pipeline execution *SUCCEED*",
-        "title_link": "http://github.com/yicr",
+        "title_link": "https://github.com/yicr",
         "fields": [
             {
                 "title": "Pipeline",
@@ -31,4 +86,10 @@ This AWS CDK Construct is designed to post messages sent from an SNS topic to a 
     }]
 }
 ```
+
+## License
+
+This project is licensed under the Apache-2.0 License.
+
+
 
