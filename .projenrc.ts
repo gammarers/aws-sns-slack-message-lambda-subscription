@@ -12,6 +12,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   keywords: ['aws', 'cdk', 'aws-cdk', 'sns', 'lambda', 'slack', 'webhook'],
   projenrcTs: true,
   repositoryUrl: 'https://github.com/gammarers/aws-sns-slack-message-lambda-subscription.git',
+  majorVersion: 1,
   deps: [
     '@gammarers/aws-resource-naming@0.10.1',
   ],
