@@ -117,7 +117,7 @@ exports[`Subscription Testing Should match snapshot 1`] = `
             "Arn",
           ],
         },
-        "Runtime": "nodejs20.x",
+        "Runtime": "nodejs22.x",
         "Timeout": 10,
       },
       "Type": "AWS::Lambda::Function",
