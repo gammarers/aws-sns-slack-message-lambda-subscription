@@ -17,7 +17,7 @@ export class SendSlackMessageFunction extends lambda.Function {
     super(scope, id, {
       description: 'src/funcs/send-slack-message.lambda.ts',
       ...props,
-      runtime: new lambda.Runtime('nodejs20.x', lambda.RuntimeFamily.NODEJS),
+      runtime: new lambda.Runtime('nodejs22.x', lambda.RuntimeFamily.NODEJS),
       handler: 'index.handler',
       code: lambda.Code.fromAsset(path.join(__dirname, '../../assets/funcs/send-slack-message.lambda')),
     });
